@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane's - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <header>
+        <nav>
+            <h1>Shane Bonghanoy</h1>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="cv-button" onclick="openCVModal()">View CV</button>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <img src="images/pic.jpg" alt="Your Photo">
+        <h1>Hi! I'm Shane Bonghanoy</h1>
+        <p>I'm a passionate Information Technology student currently pursuing a Bachelor of Science in Information Technology (BSIT) at Our Lady of Fatima University Quezon City Campus. Welcome to my portfolio, where I showcase the skills and projects I've developed throughout my academic journey.</p>
+    </section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/kk.png" alt="About Photo">
+            <div class="about-text">
+                <p>I'm a 4th-year college student with a passion for full-stack development and design. I've gained hands-on experience working as both a full-stack and front-end developer through various academic projects, where I built responsive, user-centered web applications using modern technologies across the development stack.</p>
+                <p>In addition to development, I have experience designing websites, business logos, and business menus, creating visually appealing and functional solutions that elevate brand identities. My approach combines creativity and technical precision, ensuring every project is both innovative and user-focused. Let's connect to bring your ideas to life!</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section">
+        <h2>My Projects</h2>
+        <div class="certificate-carousel-wrapper">
+            <button class="scroll-btn left" onclick="scrollProjects('left')">&#10094;</button>
+            <div class="certificate-carousel" id="projectScroll">
+                <div class="certificate-item" data-images='["siaa/1.png", "siaa/2.png", "siaa/3.png", "siaa/4.png", "siaa/5.png", "siaa/6.png", "siaa/7.png", "siaa/8.png", "siaa/9.png", "siaa/10.png", "siaa/11.png", "siaa/12.png", "siaa/13.png"]'>
+                    <img src="siaa/1.png" alt="Project 3">
+                    <h3>Larawan.Ph Photography Services</h3>
+                    <p>A website that helps a photography business called Larawan.ph manage appointments, share photos with customers, and handle communication all in one place.</p>
+                </div>
+                <div class="certificate-item" data-images='["Q/1.png", "Q/2.png", "Q/3.png", "Q/4.png", "Q/5.png", "Q/6.png", "Q/7.png", "Q/8.png", "Q/9.png"]'>
+                    <img src="Q/1.png" alt="Project 1">
+                    <h3>Academic Consultation System</h3>
+                    <p>A UX/UI design case study for a web-based system that simplifies academic consultations for students and professors.</p>
+                </div>
+                <div class="certificate-item" data-images='["itpm/1.png", "itpm/2.png", "itpm/3.png", "itpm/4.png", "itpm/5.png", "itpm/6.png", "itpm/7.png", "itpm/8.png", "itpm/9.png", "itpm/10.png", "itpm/11.png", "itpm/12.png", "itpm/13.png", "itpm/14.png", "itpm/15.png", "itpm/16.png"]'>
+                    <img src="itpm/1.png" alt="Project 3">
+                    <h3>Our Blend Inventory Management</h3>
+                    <p>Simple admin-staff inventory tracker with stock monitoring.</p>
+                </div>
+                <div class="certificate-item" data-images='["iptc/2.jpg", "iptc/3.jpg", "iptc/4.jpg", "iptc/5.jpg", "iptc/6.jpg", "iptc/7.jpg", "iptc/8.jpg", "iptc/9.jpg", "iptc/10.jpg", "iptc/11.jpg"]'>
+                    <img src="images/k.png" alt="Project 3">
+                    <h3>VolunteerHub: Connecting Communities Through a Web Platform</h3>
+                    <p>A web platform designed to help local communities share events and connect volunteers with opportunities.</p>
+                </div>
+                <div class="certificate-item" data-images='["mock/1.png", "mock/2.png", "mock/3.png", "mock/4.png", "mock/5.png", "mock/6.png", "mock/8.png", "mock/11.png", "mock/12.png", "mock/15.png", "mock/16.png", "mock/19.png", "mock/20.png", "mock/23.png", "mock/24.png", "mock/27.png", "mock/28.png", "mock/30.png", "mock/31.png", "mock/32.png", "mock/33.png", "mock/34.png", "mock/35.png", "mock/36.png", "mock/37.png"]'>
+                    <img src="mock/1.png" alt="Project 1">
+                    <h3>E-commerce UX/UI Design School Project</h3>
+                    <p>This project showcases the design of a new user experience and interface for an e-commerce platform, with a focus on creating a seamless and user-friendly online shopping journey.</p>
+                </div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollProjects('right')">&#10095;</button>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <img src="images/js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-box">
+                <img src="images/github.png" alt="Git & GitHub">
+                <p>Git & GitHub</p>
+            </div>
+            <div class="skill-box">
+                <img src="images/database.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="skill-box">
+                <img src="images/css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-box">
+                <img src="images/html-5.png" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-box">
+                <img src="images/php.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+        </div>
+    </section>
+    <section id="certificate" class="section">
+        <h2>My Certificates</h2>
+        <div class="certificate-carousel-wrapper">
+            <button class="scroll-btn left" onclick="scrollCertificates('left')">&#10094;</button>
+            <div class="certificate-carousel" id="certificateScroll">
+                <div class="certificate-item">
+                    <img src="images/cert.png" alt="Certificate 1">
+                    <h3>Ethical Hacker Course</h3>
+                    <p>Cisco Networking Academy</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/certt.png" alt="Certificate 2">
+                    <h3>Endpoint Security Course</h3>
+                    <p>Cisco Networking Academy</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/cerrt.png" alt="Certificate 3">
+                    <h3>Networking Devices</h3>
+                    <p>Cisco Networking Academy</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/certttt.png" alt="Certificate 3">
+                    <h3>Certificate of Completion</h3>
+                    <p>Great Learning Academy</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/cs.png" alt="Certificate 3">
+                    <h3>Certificate of Participation</h3>
+                    <p>"Promising Careers in "</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/cs.png" alt="Certificate 3">
+                    <h3>Certificate of Participation</h3>
+                    <p>"Innovate 2025: The Next Wave of Technology"</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/nya.png" alt="Certificate 3">
+                    <h3>Certificate of Participation</h3>
+                    <p>"Research Conference 2024"</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/it-specialist-python.png" alt="Certificate 3">
+                    <h3>Badge of Participation</h3>
+                    <p>"IT Specialist – Networking (Certiport / Pearson, January 9, 2026)"</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="images/it-specialist-networking.png" alt="Certificate 3">
+                    <h3>Badge of Participation</h3>
+                    <p>"IT Specialist – Networking (Certiport / Pearson, January 9, 2026)"</p>
+                </div>
+                
+            </div>
+            <button class="scroll-btn right" onclick="scrollCertificates('right')">&#10095;</button>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <div class="contact-info">
+                <div class="contact-inner">
+                    <img src="images/pic.jpg" alt="Contact Photo" class="contact-photo">
+                    <div class="contact-text">
+                        <h3>CONTACT ME</h3>
+                        <p><span class="contact-icon">📍</span> Quezon City</p>
+                        <p><span class="contact-icon">📱</span> 09270297043</p>
+                        <p><span class="contact-icon">📧</span> sbonghanoy2020@gmail.com</p>
+;                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Shane Bonghanoy. All rights reserved.</p>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <span class="close" onclick="closeProjectModal()">&times;</span>
+        <div class="modal-carousel">
+            <button class="modal-nav prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="modal-carousel-content">
+            </div>
+            <button class="modal-nav next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div id="certificateModal" class="modal">
+        <span class="close" onclick="closeCertificateModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <div id="cvModal" class="modal">
+        <span class="close" onclick="closeCVModal()">&times;</span>
+        <div class="modal-content">
+            <iframe id="cvIframe" src="images/CV - BONGHANOY.pdf" style="width: 100%; height: 85vh; border: none;"></iframe>
+            <div class="modal-actions">
+                <a href="images/CV.pdf" download="Shane_Bonghanoy_CV.pdf">
+                    <button class="download-btn">Download CV</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scrollContainer = document.getElementById('certificateScroll');
+        const itemsPerPage = 3;
+        let currentPage = 0;
+
+        function scrollCertificates(direction) {
+            const wrapper = document.querySelector('#certificate .certificate-carousel-wrapper');
+            const item = scrollContainer.querySelector('.certificate-item');
+            const itemStyle = getComputedStyle(item);
+            const itemWidth = item.offsetWidth + parseFloat(itemStyle.marginRight || 0);
+            const totalItems = scrollContainer.children.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            if (direction === 'right' && currentPage < totalPages - 1) {
+                currentPage++;
+            } else if (direction === 'left' && currentPage > 0) {
+                currentPage--;
+            }
+
+            const scrollAmount = wrapper.offsetWidth * currentPage;
+            scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+
+        // Project Carousel
+        const projectScroll = document.getElementById('projectScroll');
+        let projectPage = 0;
+
+        function scrollProjects(direction) {
+            const wrapper = document.querySelector('#portfolio .certificate-carousel-wrapper');
+            const item = projectScroll.querySelector('.certificate-item');
+            const itemStyle = getComputedStyle(item);
+            const itemWidth = item.offsetWidth + parseFloat(itemStyle.marginRight || 0);
+            const totalItems = projectScroll.children.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            if (direction === 'right' && projectPage < totalPages - 1) {
+                projectPage++;
+            } else if (direction === 'left' && projectPage > 0) {
+                projectPage--;
+            }
+
+            const scrollAmount = wrapper.offsetWidth * projectPage;
+            projectScroll.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+
+        // Project Modal Carousel
+        let currentSlide = 0;
+        let projectImages = [];
+
+        function openProjectModal(images) {
+            const modal = document.getElementById('projectModal');
+            const carouselContent = document.querySelector('.modal-carousel-content');
+            projectImages = JSON.parse(images);
+            currentSlide = 0;
+
+            // Clear previous content
+            carouselContent.innerHTML = '';
+
+            // Add images to carousel
+            projectImages.forEach((src, index) => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.classList.add('modal-carousel-image');
+                img.style.display = index === 0 ? 'block' : 'none';
+                carouselContent.appendChild(img);
+            });
+
+            modal.style.display = 'block';
+        }
+
+        function closeProjectModal() {
+            document.getElementById('projectModal').style.display = 'none';
+        }
+
+        function changeSlide(direction) {
+            const images = document.querySelectorAll('.modal-carousel-image');
+            images[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + direction + images.length) % images.length;
+            images[currentSlide].style.display = 'block';
+        }
+
+        // Certificate Modal
+        function closeCertificateModal() {
+            document.getElementById('certificateModal').style.display = 'none';
+        }
+
+        // CV Modal
+        function openCVModal() {
+            document.getElementById('cvModal').style.display = 'block';
+        }
+
+        function closeCVModal() {
+            document.getElementById('cvModal').style.display = 'none';
+        }
+
+        // Event Listeners
+        document.querySelectorAll('#portfolio .certificate-item img').forEach(img => {
+            img.addEventListener('click', function () {
+                const images = this.parentElement.getAttribute('data-images');
+                openProjectModal(images);
+            });
+        });
+
+        document.querySelectorAll('#certificate .certificate-item img').forEach(img => {
+            img.addEventListener('click', function () {
+                const modal = document.getElementById('certificateModal');
+                const modalImg = document.getElementById('modalImg');
+                modal.style.display = 'block';
+                modalImg.src = this.src;
+            });
+        });
+        function openCVModal() {
+    document.getElementById('cvModal').style.display = 'block';
+}
+
+function closeCVModal() {
+    document.getElementById('cvModal').style.display = 'none';
+}
+    </script>
+</body>
+</html>

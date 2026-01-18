@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shane's - Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="area">
+    <ul class="circles">
+      <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+  </div>
+
+  <header>
+    <nav class="nav">
+      <h1 class="brand">Shane Bonghanoy</h1>
+
+      <!-- Hamburger -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-right" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#certificate">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="cv-button" id="openCvBtn" type="button">View CV</button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="images/pic.jpg" alt="Your Photo" />
+    <h1>Hi! I'm Shane Bonghanoy</h1>
+    <p>
+      I'm a passionate Information Technology student currently pursuing a Bachelor of Science in Information Technology (BSIT)
+      at Our Lady of Fatima University Quezon City Campus. Welcome to my portfolio, where I showcase the skills and projects I've
+      developed throughout my academic journey.
+    </p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/kk.png" alt="About Photo" />
+      <div class="about-text">
+        <p>
+          I'm a 4th-year college student with a passion for full-stack development and design. I've gained hands-on experience
+          working as both a full-stack and front-end developer through various academic projects, where I built responsive,
+          user-centered web applications.
+        </p>
+        <p>
+          In addition to development, I have experience designing websites, business logos, and business menus. My approach combines
+          creativity and technical precision. Let's connect to bring your ideas to life!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="portfolio" class="section">
+    <h2>My Projects</h2>
+
+    <div class="carousel-wrapper">
+      <button class="scroll-btn left" type="button" data-target="projectScroll" data-dir="left">&#10094;</button>
+
+      <div class="carousel" id="projectScroll" aria-label="Projects carousel">
+        <div class="carousel-item" data-images='["siaa/1.png","siaa/2.png","siaa/3.png","siaa/4.png","siaa/5.png","siaa/6.png","siaa/7.png","siaa/8.png","siaa/9.png","siaa/10.png","siaa/11.png","siaa/12.png","siaa/13.png"]'>
+          <img src="siaa/1.png" alt="Project 1" />
+          <h3>Larawan.Ph Photography Services</h3>
+          <p>A website that helps a photography business manage appointments and share photos.</p>
+        </div>
+
+        <div class="carousel-item" data-images='["Q/1.png","Q/2.png","Q/3.png","Q/4.png","Q/5.png","Q/6.png","Q/7.png","Q/8.png","Q/9.png"]'>
+          <img src="Q/1.png" alt="Project 2" />
+          <h3>Academic Consultation System</h3>
+          <p>A UX/UI design case study for a web-based academic consultation system.</p>
+        </div>
+
+        <div class="carousel-item" data-images='["itpm/1.png","itpm/2.png","itpm/3.png","itpm/4.png","itpm/5.png","itpm/6.png","itpm/7.png","itpm/8.png","itpm/9.png","itpm/10.png","itpm/11.png","itpm/12.png","itpm/13.png","itpm/14.png","itpm/15.png","itpm/16.png"]'>
+          <img src="itpm/1.png" alt="Project 3" />
+          <h3>Our Blend Inventory Management</h3>
+          <p>Simple admin-staff inventory tracker with stock monitoring.</p>
+        </div>
+
+        <div class="carousel-item" data-images='["iptc/2.jpg","iptc/3.jpg","iptc/4.jpg","iptc/5.jpg","iptc/6.jpg","iptc/7.jpg","iptc/8.jpg","iptc/9.jpg","iptc/10.jpg","iptc/11.jpg"]'>
+          <img src="images/k.png" alt="Project 4" />
+          <h3>VolunteerHub</h3>
+          <p>A platform to help communities share events and volunteer opportunities.</p>
+        </div>
+
+        <div class="carousel-item" data-images='["mock/1.png","mock/2.png","mock/3.png","mock/4.png","mock/5.png","mock/6.png","mock/8.png","mock/11.png","mock/12.png","mock/15.png","mock/16.png","mock/19.png","mock/20.png","mock/23.png","mock/24.png","mock/27.png","mock/28.png","mock/30.png","mock/31.png","mock/32.png","mock/33.png","mock/34.png","mock/35.png","mock/36.png","mock/37.png"]'>
+          <img src="mock/1.png" alt="Project 5" />
+          <h3>E-commerce UX/UI Design</h3>
+          <p>UI/UX design project focused on a seamless shopping journey.</p>
+        </div>
+      </div>
+
+      <button class="scroll-btn right" type="button" data-target="projectScroll" data-dir="right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><img src="images/js.png" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill-box"><img src="images/github.png" alt="Git & GitHub"><p>Git & GitHub</p></div>
+      <div class="skill-box"><img src="images/database.png" alt="MySQL"><p>MySQL</p></div>
+      <div class="skill-box"><img src="images/css.png" alt="CSS"><p>CSS</p></div>
+      <div class="skill-box"><img src="images/html-5.png" alt="HTML5"><p>HTML5</p></div>
+      <div class="skill-box"><img src="images/php.png" alt="PHP"><p>PHP</p></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificate" class="section">
+    <h2>My Certificates</h2>
+
+    <div class="carousel-wrapper">
+      <button class="scroll-btn left" type="button" data-target="certificateScroll" data-dir="left">&#10094;</button>
+
+      <div class="carousel" id="certificateScroll" aria-label="Certificates carousel">
+        <div class="carousel-item">
+          <img src="images/cert.png" alt="Certificate 1">
+          <h3>Ethical Hacker Course</h3>
+          <p>Cisco Networking Academy</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/certt.png" alt="Certificate 2">
+          <h3>Endpoint Security Course</h3>
+          <p>Cisco Networking Academy</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/cerrt.png" alt="Certificate 3">
+          <h3>Networking Devices</h3>
+          <p>Cisco Networking Academy</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/certttt.png" alt="Certificate 4">
+          <h3>Certificate of Completion</h3>
+          <p>Great Learning Academy</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/nya.png" alt="Certificate 5">
+          <h3>Certificate of Participation</h3>
+          <p>"Research Conference 2024"</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/it-specialist-networking.png" alt="Certificate 6">
+          <h3>Badge of Participation</h3>
+          <p>"IT Specialist – Networking (Jan 9, 2026)"</p>
+        </div>
+      </div>
+
+      <button class="scroll-btn right" type="button" data-target="certificateScroll" data-dir="right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <div class="contact-info">
+        <div class="contact-inner">
+          <img src="images/pic.jpg" alt="Contact Photo" class="contact-photo">
+          <div class="contact-text">
+            <h3>CONTACT ME</h3>
+            <p><span class="contact-icon">📍</span> Quezon City</p>
+            <p><span class="contact-icon">📱</span> 09270297043</p>
+            <p><span class="contact-icon">📧</span> sbonghanoy2020@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shane Bonghanoy. All rights reserved.</p>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <span class="close" data-close="projectModal">&times;</span>
+    <div class="modal-carousel">
+      <button class="modal-nav prev" type="button" data-modal-nav="-1">&#10094;</button>
+      <div class="modal-carousel-content" id="projectModalContent"></div>
+      <button class="modal-nav next" type="button" data-modal-nav="1">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="modal">
+    <span class="close" data-close="certificateModal">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Certificate preview">
+  </div>
+
+  <!-- CV Modal -->
+  <div id="cvModal" class="modal">
+    <span class="close" data-close="cvModal">&times;</span>
+    <div class="modal-content cv-modal-content">
+      <iframe id="cvIframe" src="images/CV - BONGHANOY.pdf"></iframe>
+      <div class="modal-actions">
+        <a href="images/CV - BONGHANOY.pdf" download="Shane_Bonghanoy_CV.pdf">
+          <button class="download-btn" type="button">Download CV</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* =========================
+       NAVBAR (FIXED)
+    ========================= */
+    const navToggle = document.getElementById("navToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    function openMenu() {
+      navMenu.classList.add("open");
+      navToggle.setAttribute("aria-expanded", "true");
+    }
+    function closeMenu() {
+      navMenu.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        navMenu.classList.contains("open") ? closeMenu() : openMenu();
+      });
+
+      navMenu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => closeMenu());
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!navMenu.classList.contains("open")) return;
+        const clickedInsideMenu = navMenu.contains(e.target);
+        const clickedToggle = navToggle.contains(e.target);
+        if (!clickedInsideMenu && !clickedToggle) closeMenu();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+    }
+
+    /* =========================
+       CAROUSEL (CERT + PROJECTS)
+    ========================= */
+    function getScrollStep(carouselEl) {
+      const item = carouselEl.querySelector(".carousel-item");
+      if (!item) return carouselEl.clientWidth;
+
+      const gap = parseFloat(getComputedStyle(carouselEl).gap || "0");
+      const itemWidth = item.getBoundingClientRect().width + gap;
+
+      const visibleCount = Math.max(1, Math.round(carouselEl.clientWidth / itemWidth));
+      return itemWidth * visibleCount;
+    }
+
+    function scrollCarousel(carouselId, dir) {
+      const el = document.getElementById(carouselId);
+      if (!el) return;
+
+      const step = getScrollStep(el);
+      el.scrollBy({ left: dir === "right" ? step : -step, behavior: "smooth" });
+    }
+
+    document.querySelectorAll(".scroll-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const target = btn.dataset.target;
+        const dir = btn.dataset.dir;
+        scrollCarousel(target, dir);
+      });
+    });
+
+    /* =========================
+       PROJECT MODAL CAROUSEL
+    ========================= */
+    let currentSlide = 0;
+
+    function openProjectModal(imagesJson) {
+      const modal = document.getElementById("projectModal");
+      const content = document.getElementById("projectModalContent");
+
+      let images = [];
+      try { images = JSON.parse(imagesJson) || []; } catch { images = []; }
+
+      content.innerHTML = "";
+      currentSlide = 0;
+
+      images.forEach((src, index) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.className = "modal-carousel-image";
+        img.style.display = index === 0 ? "block" : "none";
+        content.appendChild(img);
+      });
+
+      modal.style.display = "block";
+    }
+
+    function closeProjectModal() {
+      document.getElementById("projectModal").style.display = "none";
+    }
+
+    function changeSlide(direction) {
+      const images = document.querySelectorAll("#projectModalContent .modal-carousel-image");
+      if (!images.length) return;
+
+      images[currentSlide].style.display = "none";
+      currentSlide = (currentSlide + direction + images.length) % images.length;
+      images[currentSlide].style.display = "block";
+    }
+
+    document.querySelectorAll("#portfolio .carousel-item img").forEach((img) => {
+      img.addEventListener("click", function () {
+        const imagesJson = this.closest(".carousel-item").getAttribute("data-images");
+        if (imagesJson) openProjectModal(imagesJson);
+      });
+    });
+
+    document.querySelectorAll("[data-modal-nav]").forEach((btn) => {
+      btn.addEventListener("click", () => changeSlide(parseInt(btn.dataset.modalNav, 10)));
+    });
+
+    /* =========================
+       CERTIFICATE MODAL
+    ========================= */
+    function closeCertificateModal() {
+      document.getElementById("certificateModal").style.display = "none";
+    }
+
+    document.querySelectorAll("#certificate .carousel-item img").forEach((img) => {
+      img.addEventListener("click", function () {
+        const modal = document.getElementById("certificateModal");
+        const modalImg = document.getElementById("modalImg");
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      });
+    });
+
+    /* =========================
+       CV MODAL
+    ========================= */
+    const openCvBtn = document.getElementById("openCvBtn");
+    function openCVModal() {
+      document.getElementById("cvModal").style.display = "block";
+    }
+    function closeCVModal() {
+      document.getElementById("cvModal").style.display = "none";
+    }
+    if (openCvBtn) openCvBtn.addEventListener("click", openCVModal);
+
+    /* =========================
+       CLOSE MODALS (X / ESC / backdrop)
+    ========================= */
+    document.querySelectorAll(".close").forEach((x) => {
+      x.addEventListener("click", () => {
+        const id = x.dataset.close;
+        if (!id) return;
+        document.getElementById(id).style.display = "none";
+      });
+    });
+
+    window.addEventListener("click", (e) => {
+      const projectModal = document.getElementById("projectModal");
+      const certModal = document.getElementById("certificateModal");
+      const cvModal = document.getElementById("cvModal");
+
+      if (e.target === projectModal) closeProjectModal();
+      if (e.target === certModal) closeCertificateModal();
+      if (e.target === cvModal) closeCVModal();
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+      closeMenu();
+      closeProjectModal();
+      closeCertificateModal();
+      closeCVModal();
+    });
+  </script>
+</body>
+</html>
