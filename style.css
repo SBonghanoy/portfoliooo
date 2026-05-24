@@ -57,6 +57,11 @@ section {
   scroll-margin-top: 98px;
 }
 
+.anchor-target {
+  display: block;
+  scroll-margin-top: 98px;
+}
+
 header {
   position: fixed;
   inset: 0 0 auto;
