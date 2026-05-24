@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Laravel</title>
+  <rect width="128" height="128" rx="22" fill="#ff2d20"/>
+  <path fill="#fff" d="M34 27c0-3 3-5 6-3l20 11c2 1 3 3 3 5v25l18-10V31c0-3 3-5 6-3l18 10c2 1 3 3 3 5v27c0 2-1 4-3 5L66 98c-2 1-4 1-6 0L24 78c-2-1-3-3-3-5V45c0-3 3-5 6-3l17 10V40L37 36c-2-1-3-3-3-5v-4Zm10 20v22l16 9V56l-16-9Zm-13 8v15l19 11V66L31 55Zm59-14v14l9 5V46l-9-5Zm-20 29v15l29-17-10-6-19 11v-3Z"/>
+</svg>
